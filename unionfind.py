@@ -14,7 +14,7 @@ class UnionFind:
         self.size = size
         self.numComponents = size
 
-        # initializing arrays with [None]*size would be slightly faster
+        # initializing arrays with [None]*size is slightly faster
         self.ID = [i for i in range(size)]
         self.SZ = [1 for _ in range(size)]
 
@@ -25,7 +25,9 @@ class UnionFind:
             root = self.ID[root]
 
         while p != root:
-            next, self.ID[p] = self.ID[p], root
+            next = self.ID[p]
+            self.ID[p] = root
+            p = next
 
         return root
 

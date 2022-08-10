@@ -1,5 +1,5 @@
 """
-transcribed to Python:
+to Python:
 Java UnionFind/Disjoint Set data structure implementation made by William Fiset
 https://github.com/williamfiset/Algorithms/blob/master/src/main/java/com/williamfiset/algorithms/datastructures/unionfind/UnionFind.java
 """
